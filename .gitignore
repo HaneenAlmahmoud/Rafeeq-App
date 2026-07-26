@@ -1,0 +1,7 @@
+.env
+google_cloud_credentials.json
+*-firebase-adminsdk-*.json
+test_audio.wav
+rafeeq_test.mp3
+__pycache__/
+*.pyc
