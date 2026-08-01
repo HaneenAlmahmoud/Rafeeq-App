@@ -136,15 +136,13 @@
         "متى موعدي الجاي في المستشفى؟"
       ]
     },
-       {
-      "intent": "open_app",
-      "description": "Opens an external app like YouTube or TikTok, with or without a search query",
-      "entities": ["app_name", "search_query"],
-      "utterances": [
- {
+    {
       "intent": "open_app",
       "description": "Opens an external app like YouTube, TikTok, or Snapchat, with or without a search query",
-      "entities": ["app_name", "search_query"],
+      "entities": [
+        "app_name",
+        "search_query"
+      ],
       "utterances": [
         "افتح لي يوتيوب",
         "شغل تيك توك",
