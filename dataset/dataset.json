@@ -11,6 +11,7 @@
     "general_chat",
     "emergency_call",
     "appointment_reminder",
+    "open_app",
     "fallback_out_of_scope",
     "fallback_unclear"
   ],
@@ -135,6 +136,28 @@
         "متى موعدي الجاي في المستشفى؟"
       ]
     },
+       {
+      "intent": "open_app",
+      "description": "Opens an external app like YouTube or TikTok, with or without a search query",
+      "entities": ["app_name", "search_query"],
+      "utterances": [
+ {
+      "intent": "open_app",
+      "description": "Opens an external app like YouTube, TikTok, or Snapchat, with or without a search query",
+      "entities": ["app_name", "search_query"],
+      "utterances": [
+        "افتح لي يوتيوب",
+        "شغل تيك توك",
+        "افتح سناب",
+        "افتح تطبيق يوتيوب",
+        "ابي اشوف تيك توك",
+        "افتح يوتيوب وابحث لي محاضرة دينية",
+        "ابي اسمع تلاوة للشيخ السديس",
+        "افتح سناب وشوف رسائل العائلة",
+        "دور لي في يوتيوب تمارين لكبار السن",
+        "افتح يوتيوب وابحث عن طريقة استخدام جهاز قياس السكر"
+      ]
+    },
     {
       "intent": "fallback_out_of_scope",
       "response": "هذي الخدمة غير متوفرة حاليا في رفيق.",
@@ -142,7 +165,6 @@
         "افتح الواتساب وأرسل صورة",
         "غير لون الشاشة للأزرق",
         "كم سعر غرام الذهب اليوم؟",
-        "شغل لي مقطع باليوتيوب",
         "وش رأيك بأسهم الشركة هذه؟",
         "احجز لي تذكرة طيران لجدة",
         "افتح تطبيق البنك واحول فلوس",
