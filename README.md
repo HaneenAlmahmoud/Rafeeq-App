@@ -20,15 +20,6 @@ The project began with research into older adults' needs and accessibility chall
 
 ## My Role
 
-**Project Lead — Haneen Almahmoud**
-
-I led the Rafeeq project team across product planning and MVP development. My work included:
-
-- Translating user research into product requirements and priorities
-- Guiding the accessible, older-adult-friendly user experience
-- Coordinating the voice and AI interaction flow
-- Supporting FlutterFlow and Firebase implementation
-- Testing the prototype and presenting Rafeeq at the program's final showcase
 
 ## Key Features
 
