@@ -18,8 +18,6 @@ The project began with research into older adults' needs and accessibility chall
 
 **Status:** MVP / prototype completed in 2026.
 
-## My Role
-
 
 ## Key Features
 
