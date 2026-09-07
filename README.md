@@ -1,104 +1,105 @@
-# Rafeeq (رفيق)
+# Rafeeq | رفيق
 
 <p align="center">
-  <img src="rafeeq-cover.jpg" alt="Rafeeq - Voice Companion for Older Adults" width="100%">
+  <img src="rafeeq-cover.jpg" alt="Rafeeq — Arabic voice-first companion for older adults" width="100%">
 </p>
 
-### AI-Powered Arabic Voice Companion for Older Adults
+<p align="center">
+  <strong>An accessible, AI-powered Arabic voice companion for older adults</strong>
+</p>
 
-Rafeeq is an accessible, voice-first companion designed to support older adults in Saudi Arabia with everyday tasks, reminders, religious services, emergency support, and simple daily assistance.
+> **Public project showcase:** This repository presents Rafeeq's concept, research, user experience, technical approach, and selected prototype materials. The latest full application source and service configuration are maintained privately.
 
-The project focuses on making digital services easier to use through **Saudi Arabic voice interaction**, a simplified Arabic interface, large readable elements, and AI-assisted intent understanding.
+## Overview
 
----
+Rafeeq (رفيق) is a voice-first digital companion designed to help older adults in Saudi Arabia complete everyday tasks more easily and independently. It combines a simplified Arabic interface with Saudi Arabic voice interaction, AI-assisted intent understanding, reminders, religious services, family communication, and emergency support.
 
-## ✨ Key Features
+The project began with research into older adults' needs and accessibility challenges, then progressed through requirements analysis, interface design, data modeling, MVP development, testing, and a final live presentation.
 
-- 🎙️ **Voice-First Interaction** — speech-to-text, intent recognition, and spoken Arabic responses
-- 💊 **Medication & Appointment Reminders** — support for daily schedules and important reminders
-- 🕌 **Prayer Times** — daily prayer times and reminder settings
-- 📖 **Quran** — access to Surahs with audio playback
-- 🆘 **Emergency Support** — quick access to emergency assistance
-- 📍 **Nearby Services** — support for locating mosques, hospitals, and pharmacies
-- 👨‍👩‍👧 **Family Contacts** — convenient access to family contact and location options
-- 🧠 **Memory Games** — simple cognitive activities such as card matching and color memory
-- ♿ **Accessible UI** — Arabic RTL design, large interface elements, readable typography, and reduced visual complexity
+**Status:** MVP / prototype completed in 2026.
 
----
+## My Role
 
-## 🤖 AI & Voice Flow
+**Project Lead — Haneen Almahmoud**
 
-Rafeeq is designed around a simple voice interaction pipeline:
+I led the Rafeeq project team across product planning and MVP development. My work included:
 
-`Arabic Voice Input → Speech-to-Text → AI Intent Understanding → Requested Service / Response → Arabic Voice Output`
+- Translating user research into product requirements and priorities
+- Guiding the accessible, older-adult-friendly user experience
+- Coordinating the voice and AI interaction flow
+- Supporting FlutterFlow and Firebase implementation
+- Testing the prototype and presenting Rafeeq at the program's final showcase
 
-The repository includes API smoke tests for the AI and voice components used during development.
+## Key Features
 
----
+- **Arabic voice interaction** — speech input, intent recognition, and spoken responses
+- **Medication and appointment reminders** — simple support for daily schedules
+- **Prayer times** — daily prayer information and reminder settings
+- **Quran services** — access to Surahs with audio playback
+- **Emergency support** — quick access to help and location-sharing options
+- **Family contacts** — convenient communication with trusted family members
+- **Nearby services** — assistance locating mosques, hospitals, and pharmacies
+- **Memory games** — simple cognitive activities
+- **Accessibility controls** — Arabic RTL layout, large elements, readable text, and reduced visual complexity
 
-## 🛠️ Technologies
+## AI & Voice Experience
 
-- **FlutterFlow** — application UI and prototype development
-- **Firebase / Firestore** — backend services and user data
-- **Gemini** — AI-assisted interaction and intent understanding
+```text
+Arabic voice input
+        ↓
+Speech-to-Text
+        ↓
+AI intent understanding
+        ↓
+Requested action or service
+        ↓
+Arabic voice response
+```
+
+The interaction was designed to reduce navigation steps and make common services available through natural spoken Arabic.
+
+## Technology
+
+- **FlutterFlow / Flutter** — interface and MVP development
+- **Firebase / Firestore** — backend services and application data
+- **Gemini** — AI-assisted intent understanding and responses
 - **Speech-to-Text (STT)** — Arabic voice transcription
-- **Text-to-Speech (TTS)** — spoken Arabic responses
+- **Text-to-Speech (TTS)** — spoken Arabic output
 - **Python** — API integration and smoke testing
 
----
+## Accessibility Approach
 
-## 🎨 UI/UX & Accessibility
+Rafeeq was designed around the needs of older adults:
 
-The interface was designed specifically with older adults in mind.
-
-Key design principles include:
-
+- Clear Arabic typography and right-to-left layout
+- Large, recognizable controls
 - Simple and consistent navigation
-- Clear Arabic typography and RTL layout
-- Large, recognizable interface elements
-- Reduced visual complexity
+- High-priority services within easy reach
 - Voice-first interaction
-- Easy access to frequently used services
+- Reduced visual and cognitive complexity
 
-For more details, see **[Rafeeq UI Showcase](Rafeeq_UI_Showcase.md)** and the application interfaces included in this repository.
+See the **[UI showcase](Rafeeq_UI_Showcase.md)** and **[FlutterFlow implementation notes](FlutterFlow_UI_Implementation.md)** for more detail.
 
----
+## Research & Project Documentation
 
-## 🔎 Research & Requirements
+This repository includes selected project artifacts:
 
-The project development process included user research, functional and non-functional requirements, interface design, data modeling, and business-model planning.
+- [Interview and survey report](Rafeeq_Interview_and_Survey_Report.pdf)
+- [Functional and non-functional requirements](Functional_and_NonFunctional_Requirements.md)
+- [Business Model Canvas](Business%20Model%20Canvas%20%E2%80%94%20Rafeeq%20(%D8%B1%D9%81%D9%8A%D9%82).pdf)
+- [FlutterFlow UI implementation](FlutterFlow_UI_Implementation.md)
+- [UI showcase](Rafeeq_UI_Showcase.md)
+- [ER diagram](rafeeq_er_diagram_updated%20(1).png)
+- Intent and voice-interaction dataset
+- [API smoke-test documentation](API_SMOKE_TESTS.md)
 
-Repository documentation includes:
-
-- **Interview & Survey Report**
-- **Functional & Non-Functional Requirements**
-- **Business Model Canvas**
-- **FlutterFlow UI Implementation**
-- **UI Showcase**
-- **ER Diagram**
-- **Intent Dataset**
-
----
-
-## 🧪 API Testing
-
-The repository contains smoke tests for key AI and voice services:
-
-- `test_gemini.py`
-- `test_speech_to_text.py`
-- `test_text_to_speech.py`
-
-See **[API Smoke Tests](API_SMOKE_TESTS.md)** for additional details.
-
----
-
-## 📁 Repository Overview
+## Repository Structure
 
 ```text
 Rafeeq-App/
-├── dataset/                              # Intent / voice interaction data
-├── API_SMOKE_TESTS.md                    # API testing documentation
-├── FlutterFlow_UI_Implementation.md      # UI implementation notes
+├── dataset/                              # Intent and voice-interaction data
+├── API_SMOKE_TESTS.md                    # AI and voice API test notes
+├── FlutterFlow_UI_Implementation.md      # Interface implementation notes
 ├── Functional_and_NonFunctional_Requirements.md
 ├── Rafeeq_Interview_and_Survey_Report.pdf
 ├── Rafeeq_UI_Showcase.md
@@ -109,11 +110,9 @@ Rafeeq-App/
 └── test_text_to_speech.py
 ```
 
----
+## العربية
 
-## 🌱 Project Goal
-
-Rafeeq explores how accessible design and AI-powered voice interaction can make everyday digital assistance more approachable for older adults, while keeping the experience simple, familiar, and centered around their daily needs.
+**رفيق** هو مساعد رقمي صوتي صُمم لتسهيل استخدام الخدمات اليومية لكبار السن. يركز المشروع على التفاعل الصوتي باللغة العربية، وسهولة الاستخدام، ووضوح الواجهات، مع خدمات تشمل التذكيرات، ومواقيت الصلاة والقرآن، والتواصل مع العائلة، ودعم حالات الطوارئ.
 
 ---
 
