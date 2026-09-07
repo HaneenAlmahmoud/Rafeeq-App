@@ -109,7 +109,7 @@ Rafeeq-App/
 
 ## Project Team  
 
-**Haneen Almahmoud — Project Leader**
+- **Haneen Almahmoud — Project Leader**
 - أصايل الحكمي
 - جود الموسى
 - علي المهان
