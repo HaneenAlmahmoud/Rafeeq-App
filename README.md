@@ -20,7 +20,7 @@ The project began with research into older adults' needs and accessibility chall
 
 ## Project Team | فريق العمل
 
-- **Haneen Almahmoud (حنين المحمود) — Project Lead**
+- **Haneen Almahmoud — Project Lead**
 - أصايل الحكمي
 - جود الموسى
 - علي المهان
