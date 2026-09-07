@@ -18,14 +18,25 @@ The project began with research into older adults' needs and accessibility chall
 
 **Status:** MVP / prototype completed in 2026.
 
-## Key Features
+## Project Team | فريق العمل
+
+- **Haneen Almahmoud (حنين المحمود) — Project Lead**
+- أصايل الحكمي
+- جود الموسى
+- علي المهان
+- لمى الرشيد
+- هبة بشار
+- نجلاء القحطاني
+- مرح المطيري
+
+## MVP Features
 
 - **Arabic voice interaction** — speech input, intent recognition, and spoken responses
 - **Medication and appointment reminders** — simple support for daily schedules
 - **Prayer times** — daily prayer information and reminder settings
 - **Quran services** — access to Surahs with audio playback
 - **Emergency support** — quick access to help and location-sharing options
-- **Family contacts** — convenient communication with trusted family members
+- **Family contacts** — calling a family member and sharing location through WhatsApp
 - **Nearby services** — assistance locating mosques, hospitals, and pharmacies
 - **Memory games** — simple cognitive activities
 - **Accessibility controls** — Arabic RTL layout, large elements, readable text, and reduced visual complexity
@@ -105,15 +116,3 @@ Rafeeq-App/
 ---
 
 **Rafeeq | رفيق — Technology designed with accessibility, simplicity, and companionship in mind.**
-
-
-## Project Team  
-
-- **Haneen Almahmoud — Project Leader**
-- أصايل الحكمي
-- جود الموسى
-- علي المهان
-- لمى الرشيد
-- هبة بشار
-- نجلاء القحطاني
-- مرح المطيري
