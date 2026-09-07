@@ -1,7 +1,7 @@
 # Rafeeq (رفيق)
 
 <p align="center">
-  <img src="rafeeq-cover.jpeg" alt="Rafeeq - Voice Companion for Older Adults" width="100%">
+  <img src="rafeeq-cover.jpg" alt="Rafeeq - Voice Companion for Older Adults" width="100%">
 </p>
 
 ### AI-Powered Arabic Voice Companion for Older Adults
