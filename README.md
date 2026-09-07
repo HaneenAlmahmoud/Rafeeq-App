@@ -1,5 +1,9 @@
 # Rafeeq (رفيق)
 
+<p align="center">
+  <img src="rafeeq-cover.jpeg" alt="Rafeeq - Voice Companion for Older Adults" width="100%">
+</p>
+
 ### AI-Powered Arabic Voice Companion for Older Adults
 
 Rafeeq is an accessible, voice-first companion designed to support older adults in Saudi Arabia with everyday tasks, reminders, religious services, emergency support, and simple daily assistance.
