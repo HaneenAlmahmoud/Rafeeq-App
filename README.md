@@ -18,7 +18,7 @@ The project began with research into older adults' needs and accessibility chall
 
 **Status:** MVP / prototype completed in 2026.
 
-## Project Team | فريق العمل
+## Project Team 
 
 - **Haneen Almahmoud — Project Lead**
 - أصايل الحكمي
