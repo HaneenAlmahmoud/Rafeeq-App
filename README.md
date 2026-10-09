@@ -21,6 +21,7 @@ The project began with research into older adults' needs and accessibility chall
 ## Project Team 
 
 - **Haneen Almahmoud — Project Lead**
+- 
 -Asial
 -jood
 -Ali
