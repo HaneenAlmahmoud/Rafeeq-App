@@ -21,13 +21,13 @@ The project began with research into older adults' needs and accessibility chall
 ## Project Team 
 
 - **Haneen Almahmoud — Project Lead**
-- أصايل الحكمي
-- جود الموسى
-- علي المهان
-- لمى الرشيد
-- هبة بشار
-- نجلاء القحطاني
-- مرح المطيري
+-Asial
+-jood
+-Ali
+-Lama
+-Heba
+-Najla
+-Marah
 
 ## MVP Features
 
