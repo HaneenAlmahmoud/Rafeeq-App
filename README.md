@@ -24,10 +24,10 @@ The project began with research into older adults' needs and accessibility chall
 - Asayel Al Hakmi
 - jood
 - Ali
-- Lama
+- Lama Alrasheed
 - Heba
 - Najla
-- Marah
+- Marah Almutairi
 
 ## MVP Features
 
