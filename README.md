@@ -5,123 +5,114 @@
 </p>
 
 <p align="center">
-  <strong>An accessible Arabic voice companion that helps older adults manage everyday tasks.</strong>
+  <strong>An accessible, AI-powered Arabic voice companion for older adults</strong>
 </p>
 
-Rafeeq (رفيق) is a team-built MVP for older adults in Saudi Arabia. It brings reminders, prayer times, Quran audio, family communication, and emergency support into a simplified Arabic experience, with voice interaction designed to reduce navigation effort.
+> **Public project showcase:** This repository presents Rafeeq's concept, research, user experience, technical approach, and selected prototype materials. The latest full application source and service configuration are maintained privately.
 
-**Project stage:** MVP / prototype completed in 2026.  
-**Core stack:** FlutterFlow / Flutter · Firebase / Cloud Firestore · Gemini · Speech-to-Text · Text-to-Speech · Python
+## Overview
 
-> **Public project showcase:** This repository contains research, requirements, interface documentation, a Firestore data model, an intent dataset, and API smoke-test scripts. The latest full application source and service configuration are maintained privately.
+Rafeeq (رفيق) is a voice-first digital companion designed to help older adults in Saudi Arabia complete everyday tasks more easily and independently. It combines a simplified Arabic interface with Saudi Arabic voice interaction, AI-assisted intent understanding, reminders, religious services, family communication, and emergency support.
 
-**Explore:** [Lama's contribution](#lama-alrasheed--technical-contribution) · [UI showcase](Rafeeq_UI_Showcase.md) · [Data model](rafeeq_er_diagram_updated%20%281%29.png) · [API test status](API_SMOKE_TESTS.md)
+The project began with research into older adults' needs and accessibility challenges, then progressed through requirements analysis, interface design, data modeling, MVP development, testing, and a final live presentation.
 
-## Problem & Approach
+**Status:** MVP / prototype completed in 2026.
 
-Older adults can face barriers when everyday services depend on complex menus, small controls, and text-heavy interfaces. Rafeeq addresses these challenges through clear Arabic typography, right-to-left layouts, large controls, consistent navigation, and voice-first access to common services.
-
-The team progressed from interviews and surveys through requirements analysis, interface design, data modeling, MVP development, testing, and a final live presentation.
-
-## Lama Alrasheed — Technical Contribution
-
-**Focus: Firestore data-model documentation within a collaborative MVP project.**
-
-[Lama Alrasheed](https://github.com/lama-alrasheed) contributed the updated Firestore ER schema to the shared repository and maintained the project README. The schema makes the application's data structure and relationships available for technical review alongside its requirements and interface documentation.
-
-| Contribution | Technical detail | Evidence |
-| --- | --- | --- |
-| Firestore schema contribution | Added the updated ER diagram covering seven collections: users, tasks, notifications, prayer settings, emergency contacts, accessibility settings, and Quran Surahs. | [ER diagram](rafeeq_er_diagram_updated%20%281%29.png) · [Contribution commit](https://github.com/HaneenAlmahmoud/Rafeeq-App/commit/75139389e85590412cc12cc190752e119aee8246) |
-| Data-relationship documentation | The contributed schema describes user-linked records, per-user settings, optional notification-to-task references, field types, and timestamps. | [Schema details](#data-model) |
-| Project communication | Updated the README to present the project's purpose, MVP scope, technical stack, and supporting artifacts. | [README contribution](https://github.com/HaneenAlmahmoud/Rafeeq-App/commit/d97503816e7461dbbd10c57a0f51c1f3c8b842a4) |
-
-**CV / portfolio summary**
-
-> Contributed Firestore data-model documentation for Rafeeq, a team-built Arabic voice-assistant MVP for older adults. Added an updated ER schema documenting seven collections and their relationships, and maintained technical project documentation.
-
-FlutterFlow UI development, Gemini integration, and voice services are described below as **team-level project capabilities**. The individual contribution above is scoped to the publicly attributable artifacts.
-
-## MVP Features
-
-| Area | Experience |
-| --- | --- |
-| Arabic voice interaction | Speech input, AI-assisted intent understanding, and spoken Arabic responses |
-| Daily reminders | Medication and appointment schedules |
-| Religious services | Prayer times, reminder settings, and Quran audio |
-| Family & emergency support | Family contact access, WhatsApp location-sharing options, and quick access to help |
-| Nearby services | Assistance locating mosques, hospitals, and pharmacies |
-| Memory activities | Card matching and color-sequence games |
-| Accessibility | Arabic RTL layouts, readable text, large controls, and reduced visual complexity |
-
-See the [UI showcase](Rafeeq_UI_Showcase.md) and [FlutterFlow implementation notes](FlutterFlow_UI_Implementation.md) for the documented interfaces.
-
-## Technical Approach
-
-| Technology | Role in the project |
-| --- | --- |
-| FlutterFlow / Flutter | Interface and MVP development |
-| Firebase / Cloud Firestore | Backend services and application data |
-| Gemini | AI-assisted intent understanding and responses |
-| Speech-to-Text (STT) | Arabic voice transcription |
-| Text-to-Speech (TTS) | Spoken Arabic output |
-| Python | Standalone API integration checks and smoke-test scripts |
-
-**Designed voice flow:** Arabic speech → Speech-to-Text → Gemini intent understanding → requested service → Arabic spoken response.
-
-The flow describes the intended interaction across services. The public scripts check individual APIs; they do not establish a verified end-to-end application flow.
-
-## Data Model
-
-The [updated Firestore ER schema](rafeeq_er_diagram_updated%20%281%29.png) maps the data needed by the application's main services.
-
-| Collection | Purpose |
-| --- | --- |
-| `users` | User profiles and personal / health information; document ID aligned with the Firebase Auth UID |
-| `tasks` | User-linked tasks and reminders, including type, status, scheduled time, and notification preference |
-| `notifications` | User-linked messages, read state, and an optional task reference |
-| `prayer_settings` | Per-user city, calculation method, prayer notification preferences, and reminder offsets |
-| `emergency_contacts` | User-linked contacts, phone numbers, relationships, and primary-contact flag |
-| `accessibility_settings` | Per-user font size, contrast, dark mode, voice speed, and voice volume |
-| `quran_surahs` | Shared Surah metadata and audio paths, independent of user records |
-
-The diagram uses string IDs (`userRef` and optional `taskRef`) to describe logical relationships. Its PK / FK labels express the data design; Firestore does not enforce SQL-style foreign keys. Per-user uniqueness shown in the diagram is a design constraint, not evidence of deployed validation rules.
-
-## Validation & Public Evidence
-
-- **Research:** [Interview and survey report](Rafeeq_Interview_and_Survey_Report.pdf).
-- **Requirements:** [Functional and non-functional requirements](Functional_and_NonFunctional_Requirements.md). Response-time, availability, offline behavior, and privacy statements in that document are requirements rather than measured results.
-- **Interfaces:** [UI showcase](Rafeeq_UI_Showcase.md) and [FlutterFlow implementation notes](FlutterFlow_UI_Implementation.md).
-- **Voice examples:** [Intent and voice-interaction dataset](dataset/dataset.json).
-- **API checks:** [Smoke-test documentation](API_SMOKE_TESTS.md) records Python syntax validation and accepted Google Cloud authentication. Live STT / TTS execution remains deferred pending billing activation; Gemini requires a local API key. No successful end-to-end API test result is reported here.
-
-To run the public API checks with your own local credentials, follow [API_SMOKE_TESTS.md](API_SMOKE_TESTS.md).
-
-## Research & Project Artifacts
-
-| Artifact | What it shows |
-| --- | --- |
-| [Interview and survey report](Rafeeq_Interview_and_Survey_Report.pdf) | User research informing the project |
-| [Requirements](Functional_and_NonFunctional_Requirements.md) | Functional scope and quality targets |
-| [Business Model Canvas](Business%20Model%20Canvas%20%E2%80%94%20Rafeeq%20%28%D8%B1%D9%81%D9%8A%D9%82%29.pdf) | Product and business framing |
-| [FlutterFlow implementation](FlutterFlow_UI_Implementation.md) | Interface approach and documented services |
-| [UI showcase](Rafeeq_UI_Showcase.md) | Screen-by-screen overview |
-| [Firestore ER diagram](rafeeq_er_diagram_updated%20%281%29.png) | Collections, fields, and logical relationships |
-| [Intent dataset](dataset/dataset.json) | Voice-interaction examples |
-| [API smoke tests](API_SMOKE_TESTS.md) | Setup, scripts, and verification status |
-
-## Project Team
+## Project Team 
 
 - **Haneen Almahmoud — Project Lead**
 - Asayel Al Hakmi
 - jood
 - Ali
-- [Lama Alrasheed](https://github.com/lama-alrasheed)
+- Lama Alrasheed
 - Heba
 - Najla
 - Marah Almutairi
 
+## MVP Features
+
+- **Arabic voice interaction** — speech input, intent recognition, and spoken responses
+- **Medication and appointment reminders** — simple support for daily schedules
+- **Prayer times** — daily prayer information and reminder settings
+- **Quran services** — access to Surahs with audio playback
+- **Emergency support** — quick access to help and location-sharing options
+- **Family contacts** — calling a family member and sharing location through WhatsApp
+- **Nearby services** — assistance locating mosques, hospitals, and pharmacies
+- **Memory games** — simple cognitive activities
+- **Accessibility controls** — Arabic RTL layout, large elements, readable text, and reduced visual complexity
+
+## AI & Voice Experience
+
+```text
+Arabic voice input
+        ↓
+Speech-to-Text
+        ↓
+AI intent understanding
+        ↓
+Requested action or service
+        ↓
+Arabic voice response
+```
+
+The interaction was designed to reduce navigation steps and make common services available through natural spoken Arabic.
+
+## Technology
+
+- **FlutterFlow / Flutter** — interface and MVP development
+- **Firebase / Firestore** — backend services and application data
+- **Gemini** — AI-assisted intent understanding and responses
+- **Speech-to-Text (STT)** — Arabic voice transcription
+- **Text-to-Speech (TTS)** — spoken Arabic output
+- **Python** — API integration and smoke testing
+
+## Accessibility Approach
+
+Rafeeq was designed around the needs of older adults:
+
+- Clear Arabic typography and right-to-left layout
+- Large, recognizable controls
+- Simple and consistent navigation
+- High-priority services within easy reach
+- Voice-first interaction
+- Reduced visual and cognitive complexity
+
+See the **[UI showcase](Rafeeq_UI_Showcase.md)** and **[FlutterFlow implementation notes](FlutterFlow_UI_Implementation.md)** for more detail.
+
+## Research & Project Documentation
+
+This repository includes selected project artifacts:
+
+- [Interview and survey report](Rafeeq_Interview_and_Survey_Report.pdf)
+- [Functional and non-functional requirements](Functional_and_NonFunctional_Requirements.md)
+- [Business Model Canvas](Business%20Model%20Canvas%20%E2%80%94%20Rafeeq%20(%D8%B1%D9%81%D9%8A%D9%82).pdf)
+- [FlutterFlow UI implementation](FlutterFlow_UI_Implementation.md)
+- [UI showcase](Rafeeq_UI_Showcase.md)
+- [ER diagram](rafeeq_er_diagram_updated%20(1).png)
+- Intent and voice-interaction dataset
+- [API smoke-test documentation](API_SMOKE_TESTS.md)
+
+## Repository Structure
+
+```text
+Rafeeq-App/
+├── dataset/                              # Intent and voice-interaction data
+├── API_SMOKE_TESTS.md                    # AI and voice API test notes
+├── FlutterFlow_UI_Implementation.md      # Interface implementation notes
+├── Functional_and_NonFunctional_Requirements.md
+├── Rafeeq_Interview_and_Survey_Report.pdf
+├── Rafeeq_UI_Showcase.md
+├── Business Model Canvas — Rafeeq (رفيق).pdf
+├── rafeeq_er_diagram_updated (1).png
+├── test_gemini.py
+├── test_speech_to_text.py
+└── test_text_to_speech.py
+```
+
 ## العربية
 
-**رفيق** مشروع جماعي لمساعد رقمي صوتي يسهّل الخدمات اليومية لكبار السن، من خلال واجهات عربية واضحة وتفاعل صوتي وخدمات للتذكيرات والصلاة والقرآن والتواصل مع العائلة ودعم الطوارئ.
+**رفيق** هو مساعد رقمي صوتي صُمم لتسهيل استخدام الخدمات اليومية لكبار السن. يركز المشروع على التفاعل الصوتي باللغة العربية، وسهولة الاستخدام، ووضوح الواجهات، مع خدمات تشمل التذكيرات، ومواقيت الصلاة والقرآن، والتواصل مع العائلة، ودعم حالات الطوارئ.
 
-**مساهمة لمى الرشيد الموثّقة:** إضافة مخطط بنية بيانات Firestore المحدّث، الذي يوضح سبع مجموعات بيانات وعلاقاتها وحقولها، وتحديث توثيق المشروع لعرض فكرته وتقنياته ومخرجاته بوضوح.
+---
+
+**Rafeeq | رفيق — Technology designed with accessibility, simplicity, and companionship in mind.**
